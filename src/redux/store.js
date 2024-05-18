@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { authReducer } from "./reducers/authReducer";
 
 export const store = configureStore({
-    reducer: {
+  reducer: {
+    auth: authReducer,
+  },
+});
 
-    }
-})
-
-export const server = ""
+export const server = "http://localhost:4000/api/v1";
